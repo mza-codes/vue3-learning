@@ -4,12 +4,16 @@ import ModalT from "./components/ModalT.vue";
 import TodoComponent from "./components/TodoComponent.vue";
 // OptionsAPI Component
 import CounterOld from "./components/CounterOld.vue";
+import { ref } from "vue";
+import CheckBox from "./components/CheckBox.vue";
+const msg = ref("");
 </script>
 
 <template>
     <main
-        class="min-h-screen bg-gradient-to-br from-red-200/50 via-rose-500/60 to-amber-600/70 col gap-4 center p-4"
+        class="min-h-screen bg-gradient-to-br from-violet-950 to-rose-950 text-white col gap-4 center p-4"
     >
+        <CheckBox />
         <IfComponent />
         <TodoComponent />
         <ModalT />
