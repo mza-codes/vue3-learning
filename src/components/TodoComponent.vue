@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 import { genColor } from "../utils";
 import InputBoxV4 from "./InputBoxV4.vue";
 
@@ -13,6 +13,15 @@ onMounted(() => {
     const value = JSON.parse(localStorage.getItem("vue-todo") ?? "[]");
     console.log("onMount set value", value);
     todos.value = value;
+});
+
+watch(text, () => {
+    if (text.value.trim().length <= 4) {
+        error.value = "Todo must be at least 5 characters!";
+    } else if (text.value.length <= 0) {
+        error.value = "";
+    } else error.value = "";
+    return;
 });
 
 function addTodo(): void {

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-const checkedNames = ref<string[]>([]);
+const checkedNames = ref<string[]>(["square"]);
 const boxes = ["box", "circle", "square", "rectangle"];
 </script>
 
@@ -12,8 +12,8 @@ const boxes = ["box", "circle", "square", "rectangle"];
         </div>
         <div
             class="row gap-4 items-center min-w-[180px]"
-            v-for="name in boxes"
-            v-bind:key="name"
+            v-for="(name, i) in boxes"
+            v-bind:key="`${name}-${i}`"
         >
             <input type="checkbox" :id="name" :value="name" v-model="checkedNames" />
             <label class="font-semibold text-sm capitalize" :for="name">{{ name }}</label>

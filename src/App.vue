@@ -2,17 +2,18 @@
 import IfComponent from "./components/IfComponent.vue";
 import ModalT from "./components/ModalT.vue";
 import TodoComponent from "./components/TodoComponent.vue";
+import CheckBox from "./components/CheckBox.vue";
+import PasswordChecker from "./components/PasswordChecker.vue";
+
 // OptionsAPI Component
 import CounterOld from "./components/CounterOld.vue";
-import { ref } from "vue";
-import CheckBox from "./components/CheckBox.vue";
-const msg = ref("");
 </script>
 
 <template>
     <main
-        class="min-h-screen bg-gradient-to-br from-violet-950 to-rose-950 text-white col gap-4 center p-4"
+        class="min-h-screen bg-gradient-to-br from-lime-950 to-rose-950 text-white col gap-4 center p-4"
     >
+        <PasswordChecker />
         <CheckBox />
         <IfComponent />
         <TodoComponent />
