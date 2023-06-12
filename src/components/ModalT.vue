@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { Transition, ref } from "vue";
+import { ref } from "vue";
 
 const show = ref();
 </script>
 <template>
     <button @click="show = true" class="btn btn-error">Toggle modal</button>
-    <Transition type="animation">
+    <transition name="fade">
         <!-- can be replaced with `v-if` -->
         <section v-show="show" class="fixed inset-0 bg-black/40 col center z-10 p-4">
             <div class="bg-white rounded-lg py-8 px-6 relative max-w-lg text-black">
@@ -33,5 +33,5 @@ const show = ref();
             </div>
             <span>Hi there</span>
         </section>
-    </Transition>
+    </transition>
 </template>
