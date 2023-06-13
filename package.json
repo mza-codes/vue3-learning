@@ -9,7 +9,6 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "-": "^0.0.1",
         "@vitejs/plugin-vue": "^4.2.3",
         "daisyui": "^2.52.0",
         "ts-password-check": "^2.0.2",

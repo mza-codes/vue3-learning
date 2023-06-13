@@ -1,13 +1,27 @@
-<script setup lang="ts">
+<script lang="ts">
+import { defineComponent } from "vue";
+
 import IfComponent from "./components/IfComponent.vue";
 import ModalT from "./components/ModalT.vue";
 import TodoComponent from "./components/TodoComponent.vue";
 import CheckBox from "./components/CheckBox.vue";
 import PasswordChecker from "./components/PasswordChecker.vue";
-
 // OptionsAPI Component
 import CounterOld from "./components/CounterOld.vue";
 import ImageViewerV2 from "./components/ImageViewerV2.vue";
+
+export default defineComponent({
+    name: "App",
+    components: {
+        IfComponent,
+        ModalT,
+        TodoComponent,
+        CheckBox,
+        PasswordChecker,
+        CounterOld,
+        ImageViewerV2,
+    },
+});
 </script>
 
 <template>
