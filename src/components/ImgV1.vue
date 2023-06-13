@@ -1,6 +1,5 @@
 <script setup lang="ts">
-defineProps(["src", "alt", "others", "author"]);
-// defineEmits(["update:modelValue"]);
+defineProps(["src", "alt", "others"]);
 </script>
 <template>
     <img

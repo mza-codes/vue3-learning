@@ -19,6 +19,6 @@ export async function fetchImages<T>(page = 3, limit = 50) {
     }
 }
 
-export function cacheData(key: string, value: string) {
+function cacheData(key: string, value: string) {
     localStorage.setItem(key, value);
 }
