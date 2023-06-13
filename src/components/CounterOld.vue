@@ -3,6 +3,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
+    name: "CounterOld",
     data() {
         return {
             count: 0,

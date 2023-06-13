@@ -7,6 +7,7 @@ import PasswordChecker from "./components/PasswordChecker.vue";
 
 // OptionsAPI Component
 import CounterOld from "./components/CounterOld.vue";
+import ImageViewerV2 from "./components/ImageViewerV2.vue";
 </script>
 
 <template>
@@ -19,6 +20,7 @@ import CounterOld from "./components/CounterOld.vue";
         <TodoComponent />
         <ModalT />
         <CounterOld />
+        <ImageViewerV2 />
     </main>
 </template>
 
